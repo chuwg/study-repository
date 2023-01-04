@@ -1,0 +1,19 @@
+.top input {
+  width: 300px;
+}
+.mid-left {
+  float: left;
+  margin-right: 10px;
+}
+textarea {
+  width: 300px;
+}
+
+.bottom button {
+  position: relative;
+  left: 12em;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 1em;
+}
