@@ -17,3 +17,54 @@ textarea {
   border: none;
   border-radius: 1em;
 }
+
+/* 강좌에서 나온 css */
+/* div, input,textarea { box-sizing:border-box; } 를 주고 시작한다. */
+/* 이미지만 나온것과 달리 반응형으로 제작해서 조금 당황.. form 태그를 안썼었다 ㅠㅠ */
+
+.form-background {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 10px;
+}
+.w-50 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.yello-button {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 1em;
+}
