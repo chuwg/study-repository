@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table 연습</title>
+    <link rel="stylesheet" href="../html-css/css/tabel.css" />
+  </head>
+  <body>
+    <div class="back-s">
+      <p>Your shopping cart</p>
+      <div class="back-w">
+        <table class="table-area">
+          <thead>
+            <th colspan="2">ITEM</th>
+            <th>AMOUNT</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+          </thead>
+          <tbody>
+            <td>
+              <img
+                src="../html-css/img/sutaewoong.webp"
+                class="it-img"
+                alt="img1"
+              />
+            </td>
+            <td>
+                <span class="it-br">SONY</span>
+                <br />
+                <span class="it-na">FE 70-200 mm F2.8 GM OSS</span>
+            </td>
+              
+            </td>
+            <td>1</td>
+            <td>1,900,000</td>
+            <td>1,900,000</td>
+            <tr />
+            <td>
+              <img
+                src="../html-css/img/sutaewoong.webp"
+                class="it-img"
+                alt="img2"
+              />
+              <td>
+                <span class="it-br">SONY</span>
+                <br />
+                <span class="it-na">Sonnar T* E 24mm F1.8 ZA</span>
+              </td>
+            </td>
+            <td>1</td>
+            <td>980,000</td>
+            <td>980,000</td>
+            <tr>
+              <td class="it-sum" colspan="5">2,880,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="foo">
+        <span><a href="#">Edit your shopping cart</a></span>
+        <button>Choose payment method</button>
+      </div>
+    </div>
+      <br />
+      <!-- 여백용 -->
+
+    <!-- 강의판 -->
+    <div class="cart-background">
+      <h3>Your shopping cart</h3>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="table-long">ITEM</th>
+            <th>AMOUNT</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="../html-css/img/sutaewoong.webp" alt="test" class="it-img"></td>
+            <td>camera</td>
+            <td>1</td>
+            <td>7000</td>
+            <td>7000</td>
+          </tr>
+          <tr>
+            <td class="table-bottom" colspan="5">총 가격 : 7000</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn">구매하기</button>
+    </div>
+  </body>
+</html>
