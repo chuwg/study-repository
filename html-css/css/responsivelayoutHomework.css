@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  width: 100vw;
+}
+
+.textarea-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.textarea {
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+}
+
+.subject-name {
+  font-weight: 900;
+}
+
+.name-details {
+  padding-top: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .textarea-back {
+    flex-wrap: wrap;
+  }
+  .textarea {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textarea {
+    width: 80%;
+  }
+}
