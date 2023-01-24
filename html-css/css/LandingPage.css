@@ -86,13 +86,26 @@ button {
   font-size: 0.8em;
 }
 
+.footer-area {
+  width: 80vw;
+  height: 200px;
+  margin: auto;
+}
 .footer-area-flex {
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
-  margin: auto;
   color: white;
   text-align: left;
+}
+.white-rela {
+  position: relative;
+}
+.white-box {
+  position: absolute;
+  width: 38vw;
+  height: 200px;
+  z-index: 2;
+  border: 0px solid white;
 }
 
 .footer-area-img1 {
@@ -150,6 +163,13 @@ button {
   text-size: 0.9em;
 }
 
+.white-box:hover {
+  width: 39vw%;
+  height: 180px;
+  border: 10px solid white;
+  transition: all 1s;
+}
+
 @media screen and (max-width: 768px) {
   header {
     height: 400px;
@@ -161,8 +181,6 @@ button {
     width: 200px;
   }
 
-  .middle-area {
-  }
   .middle-area-flex {
     display: flex;
     width: 50vw;
