@@ -1,0 +1,62 @@
+body {
+  background-color: #f7f9fc;
+  font-size: 0.9em;
+}
+
+.section-back {
+  border-radius: 1em;
+  margin-top: 1em;
+  background-color: white;
+  padding: 1em;
+}
+
+header {
+  margin-top: 1em;
+  background-color: white;
+  padding: 1em;
+  padding-bottom: 1em;
+  border-radius: 1em;
+}
+
+.img-area img {
+  width: 178px;
+  height: 164px;
+  border-radius: 6em;
+}
+
+.profile-name {
+  padding: 1em;
+  text-align: left;
+}
+
+.header-table {
+  width: 100%;
+}
+.section-nav {
+  margin-top: 1em;
+  border-bottom: 1px solid gray;
+}
+
+.section-nav-profile {
+  color: #6fbaf8;
+  border-bottom: 1px solid #6fbaf8;
+  text-align: center;
+}
+
+.about-underline {
+  border-bottom: 1px solid gray;
+}
+
+.fire-img {
+  font-size: 10em;
+  color: #6fbaf8;
+}
+
+.bottom-area {
+  text-align: center;
+  color: #6fbaf8;
+}
+
+.bottom-area h6 {
+  color: black;
+}
