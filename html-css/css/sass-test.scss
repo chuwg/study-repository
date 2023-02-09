@@ -1,0 +1,82 @@
+%기본사이즈 {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.green {
+  @extend %기본사이즈;
+  background-color: green;
+}
+
+.red {
+  @extend %기본사이즈;
+  background-color: red;
+}
+
+.blue {
+  @extend %기본사이즈;
+  background-color: blue;
+}
+
+.mission-1 {
+  margin: 80px;
+}
+.list-area {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid grey;
+  font-weight: 600;
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-left: 1em;
+      list-style: none;
+    }
+  }
+}
+
+.under-line {
+  border-bottom: 1px solid grey;
+}
+
+.list-area li:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+%alert-box {
+  padding: 1em;
+  span {
+    font-weight: 900;
+  }
+}
+
+.green-alert {
+  @extend %alert-box;
+  background-color: yellowgreen;
+  color: green;
+}
+
+.blue-alert {
+  @extend %alert-box;
+  background-color: skyblue;
+  color: blue;
+}
+
+.yello-alert {
+  @extend %alert-box;
+  background-color: rgb(255, 208, 0);
+  color: yellow;
+}
+
+.bg-color-area {
+  margin-top: 0.5em;
+  color: white;
+  background-color: darkslategray;
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+.blue, .red, .green {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.mission-1 {
+  margin: 80px;
+}
+
+.list-area {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid grey;
+  font-weight: 600;
+}
+.list-area ul {
+  margin: 0;
+  padding: 0;
+}
+.list-area ul li {
+  padding-left: 1em;
+  list-style: none;
+}
+
+.under-line {
+  border-bottom: 1px solid grey;
+}
+
+.list-area li:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+.yello-alert, .blue-alert, .green-alert {
+  padding: 1em;
+}
+.yello-alert span, .blue-alert span, .green-alert span {
+  font-weight: 900;
+}
+
+.green-alert {
+  background-color: yellowgreen;
+  color: green;
+}
+
+.blue-alert {
+  background-color: skyblue;
+  color: blue;
+}
+
+.yello-alert {
+  background-color: rgb(255, 208, 0);
+  color: yellow;
+}
+
+.bg-color-area {
+  margin-top: 0.5em;
+  color: white;
+  background-color: darkslategray;
+  text-align: center;
+}/*# sourceMappingURL=sass-test.css.map */
