@@ -60,3 +60,80 @@ header {
 .bottom-area h6 {
   color: black;
 }
+
+.footer-ani {
+  text-align: center;
+}
+.footer-ani:hover {
+  animation-name: 좌우왔다갔다;
+  animation-duration: 5s;
+}
+
+@keyframes 좌우왔다갔다 {
+  0% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.button-bounce {
+  padding: 20px;
+  color: white;
+  background-color: orange;
+  border: 0px;
+  border-radius: 1em;
+}
+.button-bounce:hover {
+  animation-name: 흔들버튼;
+  animation-duration: 2s;
+}
+
+@keyframes 흔들버튼 {
+  0% {
+    transform: rotate(-30deg);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.plus-scaleup {
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+}
+
+.plus-scaleup:hover {
+  animation-name: scaleup;
+  animation-duration: 5s;
+}
+
+@keyframes scaleup {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(20deg);
+    transform: scale(5);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
