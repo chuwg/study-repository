@@ -137,3 +137,46 @@ header {
     transform: rotate(0deg);
   }
 }
+
+.left-menubar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  text-align: right;
+  transform: translateX(-70px);
+}
+
+.left-menubar-area {
+  padding: 20px;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.left-menubar:hover {
+  width: 20%;
+  text-align: center;
+  transition-duration: 1.5s;
+  transform: translateX(0px);
+}
+
+.left-menubar-item:hover {
+  animation-name: move-text;
+  animation-duration: 2s;
+}
+
+@keyframes move-text {
+  0% {
+    transform: translateX(50px);
+  }
+  25% {
+    transform: skew(30deg, 0deg);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
