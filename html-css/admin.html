@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/ab08bfee10.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.2.1-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 searchbar">
+          <input type="text" value="" id="search-area" placeholder="Search" />
+          <label for="search-area" class="search-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+        </div>
+        <div class="col-6 searchbar-bell-mail">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-regular fa-envelope"></i>
+          <h5>Woong-gi Chu</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="content-area">
+          <h4>Dashboard</h4>
+          <div class="row dashboard-list-area">
+            <div class="col-3 dashboard-list dashboard-list-1">
+              <div class="row">
+                <div class="col-6">Earnings (Monthly)<br />$400,000</div>
+                <div class="col-6 dashboard-icon">
+                  <i class="fa-solid fa-folder"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 dashboard-list dashboard-list-2">
+              <div class="row">
+                <div class="col-6">Earnings (Annual)<br />$800,000</div>
+                <div class="col-6 dashboard-icon">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 dashboard-list dashboard-list-3">
+              <div class="row">
+                <div class="col-6">Tasks<br />13</div>
+                <div class="col-6 dashboard-icon">
+                  <i class="fa-solid fa-list-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 dashboard-list dashboard-list-4">
+              <div class="row">
+                <div class="col-6">Requests<br />26</div>
+                <div class="col-6 dashboard-icon">
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row overview-chart-area">
+            <div class="col-8 overview-list-area">
+              <h5>Earnings Overview</h5>
+              <div class="chart">
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script>
+                  const ctx = document.getElementById("myChart");
+
+                  new Chart(ctx, {
+                    type: "line",
+                    data: {
+                      labels: [
+                        "January",
+                        "February",
+                        "March",
+                        "April",
+                        "May",
+                        "June",
+                        "July",
+                      ],
+                      datasets: [
+                        {
+                          label: "Monthly",
+                          data: [0, 10, 5, 3, 20, 30, 45],
+                          fill: true,
+                          borderWidth: 3,
+                        },
+                      ],
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+                        },
+                      },
+                    },
+                  });
+                </script>
+              </div>
+            </div>
+
+            <div class="col-3 overview-list-area">
+              <h5>Tasks</h5>
+              <div class="tasks-list">
+                <h5>Borrowed Items<span>14</span></h5>
+                <h5>Trello requests<span>2</span></h5>
+                <h5>Marked Comments<span>1</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
