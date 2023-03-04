@@ -11,6 +11,42 @@ body {
   width: 100%;
 }
 
+.relative {
+  position: relative;
+}
+
+.nav-area {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: deepskyblue;
+  color: white;
+  text-align: right;
+  transform: translateX(-150px);
+  display: block;
+}
+
+.nav-area div {
+  padding: 10px;
+}
+
+.nav-area span {
+  display: none;
+  padding-left: 0.5em;
+}
+
+.nav-area a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-area:hover {
+  transform: translateX(0);
+  text-align: center;
+
+  transition: all 1s;
+}
+
 .searchbar {
   text-align: left;
 }
@@ -19,6 +55,13 @@ body {
   border-radius: 0.2em;
   background-color: lightslategrey;
   color: white;
+}
+#search-area {
+  width: 7em;
+}
+#search-area:focus {
+  width: 10em;
+  transition-duration: 1s;
 }
 .searchbar-bell-mail {
   text-align: right;
